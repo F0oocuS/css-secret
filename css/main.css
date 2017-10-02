@@ -77,10 +77,11 @@
 
 .internal-fillet {
 	background: tan;
-	border-radius: .8em;
-	padding: 1em;
-	box-shadow: 0 0 0 .5em #655;
-	outline: .5em solid #655;
+	border-radius: 30px;
+	padding: 25px;
+	box-shadow: inset 0 0 0 15px #655;
+	outline: 15px solid #655;
+	outline-offset: -15px;
 }
 
 .striped-bg {
