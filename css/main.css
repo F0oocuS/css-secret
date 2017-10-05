@@ -3,7 +3,11 @@
 }
 
 .footer {
-	height: 400px;
+	height: 400px; //need delete
+}
+
+img {
+	max-width: 100%;
 }
 
 .header__title {
@@ -67,7 +71,7 @@
 }
 
 .few-frames {
-	height: 150px;
+	min-height: 150px;
 	background: yellowgreen;
 	box-shadow: inset 0 0 0 15px deeppink,
 				inset 0 0 0 30px #655,
@@ -101,7 +105,7 @@
 }
 
 .grid {
-	height: 150px;
+	min-height: 150px;
 	background: white;
 	background-image: linear-gradient(transparent 50%, rgba(200, 0, 0, .5) 0),
 					  linear-gradient(90deg, transparent 50%, rgba(200, 0, 0, .5) 0);
@@ -109,7 +113,7 @@
 }
 
 .two-grid {
-	height: 150px;
+	min-height: 150px;
 	background: #58a;
 	background-image: 
 		linear-gradient(white 2px, transparent 0),
@@ -121,7 +125,7 @@
 }
 
 .pea-pattern {
-	height: 150px;
+	min-height: 150px;
 	background: #655;
 	background-image: radial-gradient(tan 30%, transparent 0),
 					  radial-gradient(tan 30%, transparent 0);
@@ -130,7 +134,7 @@
 }
 
 .chess {
-	height: 150px;
+	min-height: 150px;
 	background: white;
 	background-image: linear-gradient(45deg, #bbb 25%, transparent 0),
 					  linear-gradient(45deg, transparent 75%, #bbb 0),
@@ -142,7 +146,7 @@
 }
 
 .random-line {
-	height: 150px;
+	min-height: 150px;
 	background: hsl(20, 40%, 90%);
 	background-image:
 		linear-gradient(90deg, #fb3 11px, transparent 0),
@@ -175,10 +179,33 @@
 .border-ant {
 	max-width: 100%;
 	min-height: 150px;
-	padding: 20px;
 	border: 1px solid transparent;
 	background: 
-		linear-gradient(white, white) padding-box,
-		repeating-linear-gradient(-45deg, black 0, black 25%, white 0, white 50%) 0 / 12px 12px;
+		linear-gradient(white, white) content-box,
+		repeating-linear-gradient(-45deg, black 0, black 25%, white 0, white 50%) 0 / 24px 24px;
 	animation: ants 12s linear infinite;
+}
+
+.rhomb img {
+	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	transition: 1s clip-path;
+}
+
+.rhomb img:hover {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.corner {
+	padding: 25px;
+	min-height: 150px;
+	background: #58a;
+	background: 
+		radial-gradient(circle at top left, transparent 20px, #58a 0) top left,
+		radial-gradient(circle at top right, transparent 20px, #58a 0) top right,
+		radial-gradient(circle at bottom left, transparent 20px, #58a 0) bottom left,
+		radial-gradient(circle at bottom right, transparent 20px, #58a 0) bottom right;
+	background-size: 51% 51%;
+	background-repeat: no-repeat;
+	color: white;
+	text-align: center;
 }
