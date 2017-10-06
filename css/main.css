@@ -209,3 +209,63 @@ img {
 	color: white;
 	text-align: center;
 }
+
+@keyframes spin {
+	to { transform: rotate(.5turn) }
+}
+
+@keyframes bg {
+	50% { background: #655; }
+}
+
+.pie-chart {
+	margin: 0 auto;
+	width: 150px; height: 150px;
+	border-radius: 50%;
+	background: yellowgreen;
+	background-image: linear-gradient(to right, transparent 50%, #655 0);
+	overflow: hidden;
+}
+.pie-chart:before {
+	content: '';
+	display: block;
+	margin-left: 50%;
+	height: 100%;
+	background-color: inherit;
+	transform-origin: left;
+	animation: 
+		spin 3s linear infinite,
+		bg 6s step-end infinite;
+}
+
+.pie-chart-svg {
+	max-width: 150px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+svg {
+	transform: rotate(-90deg);
+	background: yellowgreen;
+	border-radius: 50%;
+}
+
+circle {
+	fill: yellowgreen;
+	stroke: #655;
+	stroke-width: 32;
+	stroke-dasharray: 35 100;
+}
+
+.one-side-shadow {
+	min-height: 150px;
+	background: #ffeb3b;
+	box-shadow: 0 20px 15px -15px rgba(0, 0, 0, .5);
+}
+
+.one-side-shadow-2 {
+	min-height: 150px;
+	background: #ffeb3b;
+	box-shadow: 0 20px 15px -15px rgba(0, 0, 0, .5),
+				0 -20px 15px -15px rgba(0, 0, 0, .5);
+}
