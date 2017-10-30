@@ -6,470 +6,281 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap-reboot.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<div class="wrapper">
 
-	<header class="header">
-		<div class="container">
+		<header class="header">
 			<h1 class="header__title">Секреты CSS</h1>
 			<p class="header__description">Идеальные решения ежедневных задач</p>
-		</div>
-	</header>
+		</header>
 
-	<section>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
+		<main class=body>
 
-						<h3 class="card__title">Полупрозрачная рамка</h3>
-						
-						<div class="card__decision">
-							
-							<div class="translucent-frame">Some text here Some text here Some text here</div>
-
-						</div>
-
-						<p class="card__desc">
-							Полупрозразная рамка при помощи свойства "background-clip"
-						</p>
-					</div>
+			<div class="card">
+				<h3 class="card__title">Полупрозрачная рамка</h3>
+				<div class="card__decision">
+					<div class="translucent-frame">Some text here Some text here Some text here</div>
 				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Несколько рамок</h3>
-						
-						<div class="card__decision">
-							
-							<div class="few-frames"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Создание нескольких рамок при помощи "box-shadow"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Внутреннее скругление</h3>
-						
-						<div class="card__decision">
-							
-							<div class="internal-fillet">
-								Скругленные углы внутри блока
-							</div>
-
-						</div>
-
-						<p class="card__desc">
-							Создание нескольких рамок при помощи "box-shadow"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Фон в полоску (вертикальные полосы)</h3>
-						
-						<div class="card__decision">
-							
-							<div class="striped-bg"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Фон в полоску при помощи "linear-gradient"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Фон в полоску (вертикальные полосы)</h3>
-						
-						<div class="card__decision">
-							
-							<div class="striped-bg striped-bg--vertical"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Фон в полоску при помощи "linear-gradient"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Фон в полоску (диагональные полосы)</h3>
-						
-						<div class="card__decision">
-							
-							<div class="striped-bg striped-bg--diagonal"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Фон в полоску при помощи "linear-gradient"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Фон в полоску (шахматная доска)</h3>
-						
-						<div class="card__decision">
-							
-							<div class="grid"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Фон в полоску при помощи "linear-gradient"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Фон в полоску (две сетки разной толщины)</h3>
-						
-						<div class="card__decision">
-							
-							<div class="two-grid"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Фон в полоску при помощи "linear-gradient"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Узор в горошек</h3>
-						
-						<div class="card__decision">
-							
-							<div class="pea-pattern"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Фон в полоску при помощи "linear-gradient"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Шахматная доска</h3>
-						
-						<div class="card__decision">
-							
-							<div class="chess"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Фон в полоску при помощи "linear-gradient"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Неповторяющееся линии</h3>
-						
-						<div class="card__decision">
-							
-							<div class="random-line"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Случайно сгенерирований фон по "Принципу цыкады". Придумал Алекс Уолкер с использованием простых чисел
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Рамка</h3>
-						
-						<div class="card__decision">
-							
-							<div class="border">
-								Some text Some text Some text
-							</div>
-
-						</div>
-
-						<p class="card__desc"></p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Рамка конверт</h3>
-						
-						<div class="card__decision">
-							
-							<div class="border-message">
-								Some text Some text Some text
-							</div>
-
-						</div>
-
-						<p class="card__desc"></p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Рамка из марширующих муравьев</h3>
-						
-						<div class="card__decision">
-							
-							<div class="border-ant"></div>
-
-						</div>
-
-						<p class="card__desc"></p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Ромб</h3>
-						
-						<div class="card__decision">
-							
-							<div class="rhomb">
-								<img src="./img/stone-art.jpg" alt="">
-							</div>
-
-						</div>
-
-						<p class="card__desc">
-							Ромб при помощи свойства "clip-path"
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Внутренее скрушление углов</h3>
-						
-						<div class="card__decision">
-							
-							<div class="corner">
-								Some text Some text Some text
-							</div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Секторная диаграма</h3>
-						
-						<div class="card__decision">
-							
-							<div class="pie-chart"></div>
-
-						</div>
-
-						<p class="card__desc">
-							Секторная диаграма при помощи поворота псевдоєлемента
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Секторная диаграма с помощью SVG</h3>
-						
-						<div class="card__decision">
-							
-							<div class="pie-chart-svg">
-								<svg viewBox="0 0 32 32">
-									<circle r="16" cx="16" cy="16" />
-								</svg>
-							</div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Тень вдоль одной стороны</h3>
-						
-						<div class="card__decision">
-							
-							<div class="one-side-shadow"></div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title">Тень вдоль двух противоположных сторон</h3>
-						
-						<div class="card__decision">
-							
-							<div class="one-side-shadow-2"></div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title"></h3>
-						
-						<div class="card__decision">
-							
-							<div class=""></div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title"></h3>
-						
-						<div class="card__decision">
-							
-							<div class=""></div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title"></h3>
-						
-						<div class="card__decision">
-							
-							<div class=""></div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title"></h3>
-						
-						<div class="card__decision">
-							
-							<div class=""></div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title"></h3>
-						
-						<div class="card__decision">
-							
-							<div class=""></div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-xl-4 col-xxl-3">
-					<div class="card">
-
-						<h3 class="card__title"></h3>
-						
-						<div class="card__decision">
-							
-							<div class=""></div>
-
-						</div>
-
-						<p class="card__desc">
-						</p>
-					</div>
-				</div>
-
+				<p class="card__desc">
+					Полупрозразная рамка при помощи свойства "background-clip"
+				</p>
 			</div>
-		</div>
 
-	</section>
+			<div class="card">
+				<h3 class="card__title">Несколько рамок</h3>
+				<div class="card__decision">
+					<div class="few-frames"></div>
+				</div>
+				<p class="card__desc">
+					Создание нескольких рамок при помощи "box-shadow"
+				</p>
+			</div>
 
-	<footer class="footer"></footer>
+			<div class="card">
+				<h3 class="card__title">Внутреннее скругление</h3>
+				<div class="card__decision">
+					<div class="internal-fillet">
+						Скругленные углы внутри блока
+					</div>
+				</div>
+				<p class="card__desc">
+					Создание нескольких рамок при помощи "box-shadow"
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Фон в полоску (вертикальные полосы)</h3>
+				<div class="card__decision">
+					<div class="striped-bg"></div>
+				</div>
+				<p class="card__desc">
+					Фон в полоску при помощи "linear-gradient"
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Фон в полоску (вертикальные полосы)</h3>
+				<div class="card__decision">
+					<div class="striped-bg striped-bg--vertical"></div>
+				</div>
+				<p class="card__desc">
+					Фон в полоску при помощи "linear-gradient"
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Фон в полоску (диагональные полосы)</h3>
+				<div class="card__decision">
+					<div class="striped-bg striped-bg--diagonal"></div>
+				</div>
+				<p class="card__desc">
+					Фон в полоску при помощи "linear-gradient"
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Фон в полоску (шахматная доска)</h3>
+				<div class="card__decision">
+					<div class="grid"></div>
+				</div>
+				<p class="card__desc">
+					Фон в полоску при помощи "linear-gradient"
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Фон в полоску (две сетки разной толщины)</h3>
+				<div class="card__decision">
+					<div class="two-grid"></div>
+				</div>
+				<p class="card__desc">
+					Фон в полоску при помощи "linear-gradient"
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Узор в горошек</h3>
+				<div class="card__decision">
+					<div class="pea-pattern"></div>
+				</div>
+				<p class="card__desc">
+					Фон в полоску при помощи "linear-gradient"
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Шахматная доска</h3>
+				<div class="card__decision">
+					<div class="chess"></div>
+				</div>
+				<p class="card__desc">
+					Фон в полоску при помощи "linear-gradient"
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Неповторяющееся линии</h3>
+				<div class="card__decision">
+					<div class="random-line"></div>
+				</div>
+				<p class="card__desc">
+					Случайно сгенерирований фон по "Принципу цыкады". Придумал Алекс Уолкер с использованием простых чисел
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Рамка</h3>
+				<div class="card__decision">
+					<div class="border">
+						Some text Some text Some text
+					</div>
+				</div>
+				<p class="card__desc"></p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Рамка конверт</h3>
+				<div class="card__decision">
+					<div class="border-message">
+						Some text Some text Some text
+					</div>
+				</div>
+				<p class="card__desc"></p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Рамка из марширующих муравьев</h3>
+				<div class="card__decision">
+					<div class="border-ant"></div>
+				</div>
+				<p class="card__desc"></p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Ромб</h3>
+				<div class="card__decision">
+					<div class="rhomb">
+						<img src="./img/stone-art.jpg" alt="">
+					</div>
+				</div>
+				<p class="card__desc">
+					Ромб при помощи свойства "clip-path"
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Внутренее скрушление углов</h3>
+				<div class="card__decision">
+					<div class="corner">
+						Some text Some text Some text
+					</div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Секторная диаграма</h3>
+				<div class="card__decision">
+					<div class="pie-chart"></div>
+				</div>
+				<p class="card__desc">
+					Секторная диаграма при помощи поворота псевдоєлемента
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Секторная диаграма с помощью SVG</h3>
+				<div class="card__decision">
+					<div class="pie-chart-svg">
+						<svg viewBox="0 0 32 32">
+							<circle r="16" cx="16" cy="16" />
+						</svg>
+					</div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Тень вдоль одной стороны</h3>
+				<div class="card__decision">
+					<div class="one-side-shadow"></div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title">Тень вдоль двух противоположных сторон</h3>
+				<div class="card__decision">
+					<div class="one-side-shadow-2"></div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title"></h3>
+				<div class="card__decision">
+					<div class=""></div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title"></h3>
+				<div class="card__decision">
+					<div class=""></div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title"></h3>
+				<div class="card__decision">
+					<div class=""></div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title"></h3>
+				<div class="card__decision">
+					<div class=""></div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title"></h3>
+				<div class="card__decision">
+					<div class=""></div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+			<div class="card">
+				<h3 class="card__title"></h3>
+				<div class="card__decision">
+					<div class=""></div>
+				</div>
+				<p class="card__desc">
+				</p>
+			</div>
+
+		</section>
+
+		<footer class="footer"></footer>
+	</div>
 
 	<script src="js/main.js"></script>
-
 </body>
 </html>

@@ -40,9 +40,35 @@ img {
 	}
 }
 
+.wrapper {
+	max-width: 1400px;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.body {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+@media(max-width: 1200px) {
+	.body {
+		grid-template-columns: repeat(3, 1fr);
+	}		
+}
+@media(max-width: 991px) {
+	.body {
+		grid-template-columns: repeat(2, 1fr);
+	}		
+}
+@media(max-width: 575px) {
+	.body {
+		grid-template-columns: 1fr;
+	}		
+}
+
 .card {
-	height: calc(100% - 20px); /* треба придумати як пофіксити без використання calc */
-	margin-bottom: 20px;
 	padding: 20px;
 	background-color: #E8EAF6;
 	border-radius: 5px;
